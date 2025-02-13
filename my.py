@@ -36,8 +36,8 @@ with st.form("loan_form"):
 
     # Financial Details
     st.subheader("🏠 Financial & Other Details")
-    savings = st.number_input("💵 Savings (₹)", min_value=0, max_value=10000000, step=1000, value=50000)
-    debt = st.number_input("📉 Total Debt (₹)", min_value=0, max_value=10000000, step=1000, value=100000)
+    savings = st.number_input("📉 Total Debt (₹)💵 Savings (₹)", min_value=0, max_value=10000000, step=1000, value=50000)
+    debt = st.number_input("💵 Savings (₹)", min_value=0, max_value=10000000, step=1000, value=100000)
 
     # Generate remaining 12 missing features with default values
     default_features = [0] * 12
